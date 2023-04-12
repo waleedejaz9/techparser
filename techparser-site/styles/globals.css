@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 12px;
+}
+h1 {
+  @apply md:text-4xl text-2xl font-bold 2xl:text-5xl;
+}
+h2 {
+  @apply font-bold text-4xl;
+}
+h3 {
+  @apply text-2xl font-bold;
+}
+h4 {
+  @apply text-base;
+}
+h5 {
+  @apply font-bold text-lg;
+}
+
+a:hover {
+  @apply cursor-pointer;
+}
+
+/* @media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+} */

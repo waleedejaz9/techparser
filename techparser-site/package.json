@@ -1,0 +1,70 @@
+{
+  "name": "techparser-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint *.{js,jsx} --quiet --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "tags": [
+    "swiper"
+  ],
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix -f git-log",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,jsx}/": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.1",
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@next/env": "^11.1.2",
+    "framer-motion": "^4.1.17",
+    "keen-slider": "^5.5.1",
+    "lottie-web": "^5.7.13",
+    "next": "^11.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-material-ui-carousel": "^2.3.1",
+    "react-stack-cards": "^1.0.8",
+    "swiper": "^6.8.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-formatter-git-log": "^0.5.3",
+    "eslint-formatter-mo": "^1.0.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sonarjs": "^0.9.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "tailwindcss": "^2.2.7",
+    "vite": "^2.5.0"
+  }
+}
